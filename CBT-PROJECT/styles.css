@@ -1,0 +1,243 @@
+-+* {  
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0px;
+  font-family: droid sans;
+ }
+.cf:before, .cf:after 
+{    content: " ";
+    display: table;
+ } 
+
+.cf:after {    
+clear: both;
+ } 
+
+.cf {    
+*zoom: 1; /* for IE6 and IE7 */
+ }
+ .visible{
+   visibility: visible;
+ }
+ .hidden{
+   visibility: hidden;
+ }
+ 
+ @media screen and (max-width:700px){
+   body{
+	 padding: 5px;
+	 background-color: #eeeeee;
+	 width: 400px;
+	 padding-top: 90px;
+   }
+   .large{
+	 width: 380px;
+	 background-color: #fff;
+	box-shadow: rgba(0,0,0,.25) 2px 2px 3px 1px, rgba(0,0,0,.25) -2px -2px 3px 1px;
+	}
+   div.large.header{
+	 height: 70px;
+	 z-index: 999;
+	 position: fixed;
+	 top: 5px;
+	 margin-left: 5px;
+	 padding: 10px;
+	 background-color: #44f;
+	 width: 380px;
+	    }
+  
+	.menu{
+	  position: relative;
+	}
+   #menubtn{
+	 width: 40px;
+	 height: 40px;
+	 margin: 5px 5px ;
+   }
+   .menu .tooltip{
+	 position: absolute;
+	 width: 380px;
+	 height: 300px;
+	 left: -5px;
+	 background-color: #fff;
+	 top: 115%;
+	 box-shadow: rgba(0,0,0,.35) 0px 2px 3px 1px;
+     opacity: 0;
+	 visibility: hidden;
+	 -moz-transition: opacity .3s ease-out;
+	 -webkit-transition: opacity .3s ease-out;
+	 -o-transition: opacity .3s ease-out;
+	 transition: opacity .3s ease-out;
+   }
+   .menu:hover .tooltip{
+	 opacity: 1;
+	 visibility: visible;
+   }
+   .tooltip:after{
+	 content: '';
+ position: absolute;
+ bottom: 99% ;
+left: 7% ;
+margin-left: -15px ;
+ width: 0 ;
+height: 0 ;
+border-bottom : 15px solid #fff;
+border-right : 15px solid transparent ;
+border-left: 15px solid transparent ;
+   }
+   #header{
+	 font-size: 25px;
+	 color: #fff;
+	 float: right;
+	 margin: 10px 5px;
+   }
+   div.container{
+	  height: 1000px;
+	  margin-left:5px;
+	  padding: 5px;
+	}
+	.inner{
+	  width: 370px;
+	  
+	}
+	div.container > div.inner.img,.post{
+	  height: 450px;
+	  box-shadow: rgba(0,0,0,.25) 0px 2px 3px 1px;
+      z-index: 888;
+	  background-color: #55f;
+	  
+	}
+	div.image{
+	  width: inherit;
+	  height: 330px;
+	  overflow: hidden;
+	}
+	div.image > img{
+	  width: inherit;
+	  height: auto;
+	}
+	.time{
+	  font-size: 70px;
+	  font-family: lato;
+	  margin: 20px 10px;
+	  color: #FAFDFF;
+	  position: relative;
+	}
+	#day{
+	  font-size: 20px;
+	  float: right;
+	  position: absolute;
+	  top: 10px;
+	  right:40px;
+	}
+	#day > p{
+	  font-size:35px;
+	  font-weight: bold;
+	  
+	} 
+	.post{
+	  max-height: 600px;
+	  min-height: 300px;
+	  margin-top: 10px;
+	  padding: 0px;
+	  background-color: #fff;
+	  color: #555;
+	}
+	.post .user-info{
+	  color: #555;
+	  padding: 5px;
+	  background-color: #fff;
+	  position: relative;
+	}
+	.post #pics{
+	  width: 60px;
+	  height: 60px;
+	  float: left;
+	  clear: left;
+	  margin-right: 10px;
+	}
+	.user-name{
+	  font-weight: bold;
+	  font-size: 22px;
+	}
+	.rank{
+	  font-weight: lighter;
+	  font-size: 15px;
+	}
+	.post-menu{
+	  position: absolute;
+	  top: 5px;
+	  right: 5px;
+	}
+	.sub-post p{
+	  margin: 10px 8px;
+	  padding: 5px 5px;
+	  overflow-y: hidden;
+	  min-height: 100px;
+	  max-height: 300px;
+	  font-size: 20px;
+	}
+legend{
+	font-family: san-serif;
+}
+ }
+ .smart-alert{
+   background-color: rgba(250,250,250,0.8);
+   
+   padding: 10px;
+   position: fixed;
+   
+   box-shadow: rgba(0,0,0,.25) 0px 2px 3px 1px;
+   
+ }
+ .smart-alert p{
+  
+   
+   width: 90%;
+   height: 70%;
+   overflow-y: auto;
+   font-family: droid sans;
+   font-weight: lighter;
+   margin-top: 3%;
+ }
+ .overlay{
+   position: fixed;
+   left:0;
+   z-index: 999;
+   overflow: hidden;
+   top: 0px;
+   width: 3000px;
+   height: 3000px;
+   background-color: rgba(0,0,0,.5);
+   filter: blur(3.4px);
+   
+ }
+ 
+ .smart-alert button{
+   font-size: 1.2em;
+   width: 30%;
+   height: 10%;
+   background-color: rgba(0,0,0,0);
+   outline: none;
+   border: none;
+   display: inline-block;
+ }
+ .button{
+   position: absolute;
+   bottom: 5%;
+   width: 100%;
+ }
+ button.confirm{
+   color: #1DaaFf;
+  margin-right:10px;
+ }
+ button.cancel{
+   color: #656;
+   margin-left: 35%;
+ }
+ 
+.num{
+background-color : "#ff0000";
+}

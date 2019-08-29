@@ -1,0 +1,166 @@
+body{
+background-color: white;
+}
+
+/* beginning of index page */
+#form{
+margin-top: 10%;
+}
+
+fieldset{
+border-radius: 10px 10px 10px 10px;
+border: 5px groove #c0c0c0;
+}
+
+legend{
+color: red;
+font-family: georgian, arial;
+font-size: 12px;
+font-weight: bolder;
+}
+
+input:focus{
+box-shadow: 2px 2px 1px blue;
+}
+
+#login{
+margin-left: 10%;
+font-weight: bolder;
+}
+
+#resetMe{
+margin-left: 40%;
+font-weight: bolder;
+}
+
+#showError{
+color: red;
+font-weight: normal;
+font-size: 12px;
+}
+
+/* End of index page */
+
+
+/* beginning of welcome page */
+#welcome{
+margin-top: 5%;
+font-family: georgian;
+font-size: 14px;
+}
+
+#formPos2{
+margin-top: 10%;
+line-height: 10px;
+}
+
+#proceed{
+margin-top: 15%;
+margin-left: 42.5%;
+}
+
+
+/* End of welcome page */
+
+
+/*question page */
+#questionPage{
+margin-top: 0%;
+border: 2px ridge #c0c0c0;
+box-shadow: 1px 1px 1px blue;
+height: 450px;
+}
+
+.buttonSeperate button{
+margin-left: 5%;
+margin-top: 2%;
+
+}
+
+#questionMe{
+margin-top: 4%;
+}
+
+#positionButton{
+margin-top: 8%;
+margin-left: 25%;
+}
+
+#next{
+margin-left: 40%;
+font-weight: bolder;
+}
+
+#previous{
+font-weight: bolder;
+}
+
+#numberButton{
+margin-top: 5%;
+margin-left: 40%;
+}
+
+#numberButton button{
+margin-left: 2%;
+}
+
+#submitMe{
+margin-top: 20px;
+}
+
+#timer{
+margin-top:2%;
+}
+
+#tym {
+ font-family: monospace;
+ color: red;
+ font-size: 21px;
+ font-weight: bold;
+ background-color: white;
+ text-align: center;
+ border: none;
+}
+
+#txtbox3{
+font-weight: normal;
+font-family: monospace;
+}
+
+#txtbox1 , #txtbox2{
+font-weight: bolder;
+font-family: monospace;
+}
+
+/*end of question page */
+
+/*result page */
+#resultPage{
+margin-top:5%;
+border: 2px ridge #c0c0c0;
+box-shadow: 1px 1px 1px blue;
+height: 450px;
+}
+
+#resultName{
+margin-top: 10%;
+line-height: 350%;
+}
+
+#btnLog{
+margin-top: 30%;
+}
+
+#resultName label {
+font-size: 20px;
+font-weight: bolder;
+}
+
+
+#resultName span{
+font-size: 20px;
+font-weight: bolder;
+}
+
+
+/* end of result page */
